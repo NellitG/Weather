@@ -14,6 +14,8 @@ const routes = [
   { path: "/api", name: "api", component: ApiTestView },
   { path: "/posts", name: "posts", component: PostsView },
   { path: "/posts/:id", name: "details", component: DetailsView, props: true },
+  { path: "/register", name: "register", component: () => import("../views/RegisterView.vue") },
+  { path: "/login", name: "login", component: () => import("../views/LoginView.vue") },
 ];
 
 /**Initialize here */
